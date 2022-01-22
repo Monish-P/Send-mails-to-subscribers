@@ -52,7 +52,7 @@ pycparser==2.20
 pydub==0.25.1
 PyJWT==2.3.0
 pylint==2.9.6
-pymongo==2.8
+pymongo==3.12.3
 pyOpenSSL==20.0.1
 python-dateutil==2.8.2
 python-http-client==3.3.5
