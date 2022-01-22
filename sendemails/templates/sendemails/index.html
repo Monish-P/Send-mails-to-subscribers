@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emailsubscriber</title>
+</head>
+<body>
+    <h1 style="text-align:center">Send emails to your subscribers list!</h1><br>
+    <form style="text-align:center" method="POST" action="sendemails">
+        {% csrf_token %}
+        <label style="text-align:left; font-size:larger;" for="subject">Enter email subject here</label><br>
+        <textarea rows="10" cols="50" id='subject' name="subject"></textarea><br><br>
+        <label style="text-align:left; font-size:larger;" for="text">Enter Text:</label><br>
+        <textarea rows="15" cols="50" id='text' name="text"></textarea><br><br>
+        <label style="text-align:left; font-size:larger;" for="from">Enter your email from which you want to send:</label>
+        <input type="text" id="from" name="from"><br><br>
+        <label style="text-align:left; font-size:larger;" for="to">Enter subscribers emails seperated by ','</label><br>
+        <textarea rows="10" cols="50" id='to' name="to"></textarea><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
