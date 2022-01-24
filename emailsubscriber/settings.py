@@ -127,7 +127,7 @@ STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 EMAIL_BACKEND = "sendgrid_backend.SendgridBackend"
-SENDGRID_API_KEY = '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'
+SENDGRID_API_KEY = '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'
 SENDGRID_SANDBOX_MODE_IN_DEBUG=False
 
 django_heroku.settings(locals())
